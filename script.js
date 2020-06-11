@@ -7,15 +7,16 @@ window.onload = () => {
 };
 
 function staticLoadPlaces() {
-    return [
-        {
-            name: 'Pokèmon',
-            location: {
-               lat: 18.617762,
-                lng: -100.907465,
-            },
-        },
-    ];
+    return [ navigator.geolocation.getCurrentPosition(mostrar) ]
+}
+function mostrar(posicion){
+    return {
+        name: 'Pokèmon',
+        location: {
+            lat: posicion.coords.latitude,
+            lng: posicion.coords.longitude,
+        }
+    }
 }
 
 var models = [
