@@ -16,9 +16,9 @@
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
       <a-text
-        value="This content will always face you."
+        value="TE AMO MUCHO"
         look-at="[gps-camera]"
-        scale="50 50 50"
+        scale="15 15 15"
         gps-entity-place="latitude: 18.617806; longitude: -100.907436;"
       ></a-text>
       <a-camera gps-camera rotation-reader> </a-camera>
