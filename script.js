@@ -2,11 +2,11 @@ window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
     button.innerText = '﹖';
 
-    let places = staticLoadPlaces();
+    let places = await staticLoadPlaces();
     renderPlaces(places);
 };
 
-function staticLoadPlaces() {
+async function staticLoadPlaces() {
     return [ navigator.geolocation.getCurrentPosition(mostrar) ]
 }
 function mostrar(posicion){
