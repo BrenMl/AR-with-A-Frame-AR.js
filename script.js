@@ -10,6 +10,7 @@ function staticLoadPlaces() {
     return [ navigator.geolocation.getCurrentPosition(mostrar) ]
 }
 function mostrar(posicion){
+    console.log("posicion",posicion)
     return {
         name: 'Pokèmon',
         location: {
