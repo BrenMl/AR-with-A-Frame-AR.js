@@ -13,11 +13,11 @@
     <a-scene
       vr-mode-ui="enabled: false"
       embedded
-      arjs="sourceType: webcam; debugUIEnabled: false;"
+      arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;"
     >
     <a-entity gltf-model="./assets/magnemite/scene.gltf" 
         rotation="0 180 0" scale="0.15 0.15 0.15" 
-        gps-entity-place="longitude: 18.617806; latitude: -100.907436;" animation-mixer/>
+        gps-entity-place="longitude: 18.617748; latitude: -100.907481;" animation-mixer/>
       <!-- <a-text
         value="TE AMO MUCHO"
         look-at="[gps-camera]"
