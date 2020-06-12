@@ -21,7 +21,7 @@
         vr-mode-ui='enabled: false' 
         embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        <a-entity  position="0 0 2.15"  gltf-model="./assets/charmander/model.gltf" scale="4 4 4" animation-mixer crossOrigin="anonymous">
+        <a-entity  position="0 0 0"  gltf-model="./assets/charmander/model.gltf" scale="2 2 2" animation-mixer crossOrigin="anonymous">
         </a-entity>
     <a-camera "></a-camera>
 </a-scene>
