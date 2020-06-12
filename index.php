@@ -23,7 +23,7 @@
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
         <a-entity  position="0 0 2.15" rotation="45 90 180" gltf-model="./assets/magnemite/scene.gltf" scale="0.15 0.15 0.15" crossOrigin="anonymous">
         </a-entity>
-    <a-camera position="0 1.2 0"></a-camera>
+    <a-camera "></a-camera>
 </a-scene>
 <div class="centered">
     <button data-action="change"></button>
