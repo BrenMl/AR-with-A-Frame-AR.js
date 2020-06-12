@@ -2,23 +2,23 @@ window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
     button.innerText = '﹖';
 
-    let places = await staticLoadPlaces();
-    renderPlaces(places);
+    // let places = staticLoadPlaces();
+    renderPlaces();
 };
 
-async function staticLoadPlaces() {
-    return [ navigator.geolocation.getCurrentPosition(mostrar) ]
-}
-function mostrar(posicion){
-    console.log("posicion",posicion)
-    return {
-        name: 'Pokèmon',
-        location: {
-            lat: posicion.coords.latitude,
-            lng: posicion.coords.longitude,
-        }
-    }
-}
+// async function staticLoadPlaces() {
+//     return  [ navigator.geolocation.getCurrentPosition(mostrar) ]
+// }
+// function mostrar(posicion){
+//     console.log("posicion",posicion)
+//     return {
+//         name: 'Pokèmon',
+//         location: {
+//             lat: posicion.coords.latitude,
+//             lng: posicion.coords.longitude,
+//         }
+//     }
+// }
 
 var models = [
     {
@@ -64,24 +64,24 @@ var setModel = function (model, entity) {
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
 
-    places.forEach((place) => {
-        let latitude = place.location.lat;
-        let longitude = place.location.lng;
+    // places.forEach((place) => {
+    //     let latitude = place.location.lat;
+    //     let longitude = place.location.lng;
 
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+        // model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
 
         setModel(models[modelIndex], model);
 
         model.setAttribute('animation-mixer', '');
 
         document.querySelector('button[data-action="change"]').addEventListener('click', function () {
-            var entity = document.querySelector('[gps-entity-place]');
+            // var entity = document.querySelector('[gps-entity-place]');
             modelIndex++;
             var newIndex = modelIndex % models.length;
             setModel(models[newIndex], entity);
         });
 
         scene.appendChild(model);
-    });
+    // });
 }
