@@ -24,6 +24,6 @@
         <a-entity  position="2 0 0" rotation="0 -90 0"  gltf-model="./assets/charmander/model.gltf" scale="0.5 0.5 0.5" animation-mixer crossOrigin="anonymous">
         </a-entity>
     <a-camera  position="0 1.2 0"></a-camera>
-    <a-plane height="5" width="5" position="0 0 3" rotation="-90 0 0"></a-plane>
+    <!-- <a-plane height="5" width="5" position="0 0 3" rotation="-90 0 0"></a-plane> -->
 </a-scene>
 </body>
