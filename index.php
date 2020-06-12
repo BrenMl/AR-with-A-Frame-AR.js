@@ -23,6 +23,6 @@
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
         <a-entity  position="0 0 0"  gltf-model="./assets/charmander/model.gltf" scale="2 2 2" animation-mixer crossOrigin="anonymous">
         </a-entity>
-    <a-camera "></a-camera>
+    <a-camera  position="0 1.2 0"></a-camera>
 </a-scene>
 </body>
